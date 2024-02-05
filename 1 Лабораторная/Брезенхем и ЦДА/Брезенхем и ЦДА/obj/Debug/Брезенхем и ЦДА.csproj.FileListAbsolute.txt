@@ -1,0 +1,10 @@
+C:\Users\wolfd\Desktop\Учеба\Компьютерная графика\1 Лабораторная\Брезенхем и ЦДА\Брезенхем и ЦДА\bin\Debug\Брезенхем и ЦДА.exe.config
+C:\Users\wolfd\Desktop\Учеба\Компьютерная графика\1 Лабораторная\Брезенхем и ЦДА\Брезенхем и ЦДА\bin\Debug\Брезенхем и ЦДА.exe
+C:\Users\wolfd\Desktop\Учеба\Компьютерная графика\1 Лабораторная\Брезенхем и ЦДА\Брезенхем и ЦДА\bin\Debug\Брезенхем и ЦДА.pdb
+C:\Users\wolfd\Desktop\Учеба\Компьютерная графика\1 Лабораторная\Брезенхем и ЦДА\Брезенхем и ЦДА\obj\Debug\Брезенхем и ЦДА.csproj.AssemblyReference.cache
+C:\Users\wolfd\Desktop\Учеба\Компьютерная графика\1 Лабораторная\Брезенхем и ЦДА\Брезенхем и ЦДА\obj\Debug\Брезенхем_и_ЦДА.Form1.resources
+C:\Users\wolfd\Desktop\Учеба\Компьютерная графика\1 Лабораторная\Брезенхем и ЦДА\Брезенхем и ЦДА\obj\Debug\Брезенхем_и_ЦДА.Properties.Resources.resources
+C:\Users\wolfd\Desktop\Учеба\Компьютерная графика\1 Лабораторная\Брезенхем и ЦДА\Брезенхем и ЦДА\obj\Debug\Брезенхем и ЦДА.csproj.GenerateResource.cache
+C:\Users\wolfd\Desktop\Учеба\Компьютерная графика\1 Лабораторная\Брезенхем и ЦДА\Брезенхем и ЦДА\obj\Debug\Брезенхем и ЦДА.csproj.CoreCompileInputs.cache
+C:\Users\wolfd\Desktop\Учеба\Компьютерная графика\1 Лабораторная\Брезенхем и ЦДА\Брезенхем и ЦДА\obj\Debug\Брезенхем и ЦДА.exe
+C:\Users\wolfd\Desktop\Учеба\Компьютерная графика\1 Лабораторная\Брезенхем и ЦДА\Брезенхем и ЦДА\obj\Debug\Брезенхем и ЦДА.pdb
