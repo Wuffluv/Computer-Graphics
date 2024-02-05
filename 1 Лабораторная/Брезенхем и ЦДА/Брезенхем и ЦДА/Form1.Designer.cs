@@ -61,7 +61,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(245, 22);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Введите X1";
+            this.textBox1.Text = "50";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
@@ -70,7 +70,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(245, 22);
             this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Введите Y1";
+            this.textBox2.Text = "20";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // pictureBox1
@@ -97,7 +97,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(245, 22);
             this.textBox3.TabIndex = 5;
-            this.textBox3.Text = "Введите Y2";
+            this.textBox3.Text = "80";
             // 
             // textBox4
             // 
@@ -105,7 +105,8 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(245, 22);
             this.textBox4.TabIndex = 6;
-            this.textBox4.Text = "Введите X2";
+            this.textBox4.Text = "50";
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged_1);
             // 
             // label1
             // 
@@ -131,7 +132,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(245, 22);
             this.textBox5.TabIndex = 9;
-            this.textBox5.Text = "Введите X1";
+            this.textBox5.Text = "120";
             // 
             // textBox6
             // 
@@ -139,7 +140,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(245, 22);
             this.textBox6.TabIndex = 10;
-            this.textBox6.Text = "Введите Y1";
+            this.textBox6.Text = "50";
             this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // textBox7
@@ -148,7 +149,7 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(245, 22);
             this.textBox7.TabIndex = 11;
-            this.textBox7.Text = "Введите X2";
+            this.textBox7.Text = "180";
             // 
             // textBox8
             // 
@@ -156,7 +157,7 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(245, 22);
             this.textBox8.TabIndex = 12;
-            this.textBox8.Text = "Введите Y2";
+            this.textBox8.Text = "50";
             // 
             // Form1
             // 

@@ -12,8 +12,7 @@ namespace Брезенхем_и_ЦДА
 {
     public partial class Form1 : Form
     {
-        // Переменные для хранения координат
-        private int x1, y1, x2, y2;
+        private int x1, y1, x2, y2, x3, y3, x4, y4;
 
         public Form1()
         {
@@ -22,12 +21,84 @@ namespace Брезенхем_и_ЦДА
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            // Обработчик события для pictureBox1 (алгоритм Брезенхема)
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
+            // Обработчик события изменения текста в textBox1
+            if (textBox1.Text == "Введите X")
+            {
+                textBox1.Text = "";
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            // Обработчик события изменения текста в textBox2
+            if (textBox2.Text == "Введите Y")
+            {
+                textBox2.Text = "";
+            }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            // Обработчик события изменения текста в textBox3
+            if (textBox3.Text == "Введите X")
+            {
+                textBox3.Text = "";
+            }
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            // Обработчик события изменения текста в textBox4
+            if (textBox4.Text == "Введите Y")
+            {
+                textBox4.Text = "";
+            }
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            // Обработчик события изменения текста в textBox5
+            if (textBox5.Text == "Введите X")
+            {
+                textBox5.Text = "";
+            }
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+            // Обработчик события изменения текста в textBox6
+            if (textBox6.Text == "Введите Y")
+            {
+                textBox6.Text = "";
+            }
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+            // Обработчик события изменения текста в textBox7
+            if (textBox7.Text == "Введите X")
+            {
+                textBox7.Text = "";
+            }
+        }
+
+        private void textBox4_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+            // Обработчик события изменения текста в textBox8
+            if (textBox8.Text == "Введите Y")
+            {
+                textBox8.Text = "";
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -36,7 +107,10 @@ namespace Брезенхем_и_ЦДА
 
             // Парсим введенные координаты
             if (int.TryParse(textBox1.Text, out x1) && int.TryParse(textBox2.Text, out y1) &&
-                int.TryParse(textBox3.Text, out x2) && int.TryParse(textBox4.Text, out y2))
+                int.TryParse(textBox3.Text, out x2) && int.TryParse(textBox4.Text, out y2) &&
+                int.TryParse(textBox5.Text, out x3) && int.TryParse(textBox6.Text, out y3) && 
+                int.TryParse(textBox7.Text, out x4) && int.TryParse(textBox8.Text, out y4)
+                )
             {
                 // Рисуем линию по алгоритму Брезенхема в PictureBox1
                 DrawBresenhamLine();
@@ -55,14 +129,11 @@ namespace Брезенхем_и_ЦДА
         {
             // Рисуем линию по алгоритму Брезенхема
 
-            // Создаем новый объект Bitmap для хранения изображения
             Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             using (Graphics g = Graphics.FromImage(bmp))
             {
-                // Вызываем метод для рисования линии по алгоритму Брезенхема
                 BresenhamLine(x1, y1, x2, y2, g);
             }
-            // Отображаем изображение в pictureBox1
             pictureBox1.Image = bmp;
         }
 
@@ -70,53 +141,49 @@ namespace Брезенхем_и_ЦДА
         {
             // Рисуем линию по методу ЦДА
 
-            // Создаем новый объект Bitmap для хранения изображения
             Bitmap bmp = new Bitmap(pictureBox2.Width, pictureBox2.Height);
             using (Graphics g = Graphics.FromImage(bmp))
             {
-                // Вызываем метод для рисования линии по методу ЦДА
-                DDALine(x1, y1, x2, y2, g);
+                DDALine(x3, y3, x4, y4, g);
             }
-            // Отображаем изображение в pictureBox2
             pictureBox2.Image = bmp;
         }
 
+        // Рисование линии по алгоритму Брезенхема
         private void BresenhamLine(int x1, int y1, int x2, int y2, Graphics g)
         {
-            // Реализация алгоритма Брезенхема для рисования линии
-
-            // Вычисляем разницу по x и y
+            // Вычисление разницы по x и y
             int dx = Math.Abs(x2 - x1);
             int dy = Math.Abs(y2 - y1);
 
-            // Устанавливаем направление отрисовки по x и y
+            // Установка направления отрисовки по x и y
             int sx = (x1 < x2) ? 1 : -1;
             int sy = (y1 < y2) ? 1 : -1;
 
-            // Вычисляем ошибку
+            // Вычисление ошибки
             int err = dx - dy;
 
             // Основной цикл отрисовки
             while (true)
             {
-                // Закрашиваем текущий пиксель
+                // Закрашивание текущего пикселя
                 g.FillRectangle(Brushes.Black, x1, y1, 1, 1);
 
-                // Если достигли конечной точки, выходим из цикла
+                // Проверка достижения конечной точки
                 if (x1 == x2 && y1 == y2)
                     break;
 
-                // Вычисляем ошибку для следующего шага
+                // Вычисление ошибки для следующего шага
                 int e2 = 2 * err;
 
-                // Перемещаемся по оси x при необходимости
+                // Перемещение по оси x при необходимости
                 if (e2 > -dy)
                 {
                     err -= dy;
                     x1 += sx;
                 }
 
-                // Перемещаемся по оси y при необходимости
+                // Перемещение по оси y при необходимости
                 if (e2 < dx)
                 {
                     err += dx;
@@ -125,50 +192,41 @@ namespace Брезенхем_и_ЦДА
             }
         }
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
+        // Рисование линии по методу ЦДА
+        private void DDALine(int x3, int y3, int x4, int y4, Graphics g)
         {
+            // Вычисление разницы по x и y
+            int dx = x4 - x3;
+            int dy = y4 - y3;
 
-        }
-
-        private void DDALine(int x1, int y1, int x2, int y2, Graphics g)
-        {
-            // Реализация метода ЦДА для рисования линии
-
-            // Вычисляем разницу по x и y
-            int dx = x2 - x1;
-            int dy = y2 - y1;
-
-            // Находим максимальное количество шагов
+            // Нахождение максимального количества шагов
             int steps = Math.Max(Math.Abs(dx), Math.Abs(dy));
 
-            // Вычисляем инкременты по x и y
+            // Вычисление инкрементов по x и y
             float xIncrement = dx / (float)steps;
             float yIncrement = dy / (float)steps;
 
-            // Инициализируем начальные значения
-            float x = x1;
-            float y = y1;
+            // Инициализация начальных значений
+            float x = x3;
+            float y = y3;
 
             // Основной цикл отрисовки
             for (int i = 0; i <= steps; i++)
             {
-                // Закрашиваем текущий пиксель
+                // Закрашивание текущего пикселя
                 g.FillRectangle(Brushes.Black, (int)x, (int)y, 1, 1);
 
-                // Обновляем координаты для следующего шага
+                // Обновление координат для следующего шага
                 x += xIncrement;
                 y += yIncrement;
             }
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            // Обработчик события изменения текста в textBox2
-        }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            // Обработчик события для pictureBox2 (метод ЦДА)
+           
+
         }
     }
 }
