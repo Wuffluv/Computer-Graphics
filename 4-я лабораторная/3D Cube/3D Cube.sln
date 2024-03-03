@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3D Cube", "3D Cube\3D Cube.csproj", "{414AB4BC-536F-4B55-8A0E-D2F3C6DE46FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{414AB4BC-536F-4B55-8A0E-D2F3C6DE46FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{414AB4BC-536F-4B55-8A0E-D2F3C6DE46FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{414AB4BC-536F-4B55-8A0E-D2F3C6DE46FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{414AB4BC-536F-4B55-8A0E-D2F3C6DE46FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD1F5B80-52B4-4317-BB39-CCADDCAD7806}
+	EndGlobalSection
+EndGlobal
