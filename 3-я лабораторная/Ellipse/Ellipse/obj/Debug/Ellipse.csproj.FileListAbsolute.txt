@@ -1,0 +1,10 @@
+C:\Users\wolfd\Desktop\Study\Компьютерная графика\3-я лабораторная\Ellipse\Ellipse\bin\Debug\Ellipse.exe.config
+C:\Users\wolfd\Desktop\Study\Компьютерная графика\3-я лабораторная\Ellipse\Ellipse\bin\Debug\Ellipse.exe
+C:\Users\wolfd\Desktop\Study\Компьютерная графика\3-я лабораторная\Ellipse\Ellipse\bin\Debug\Ellipse.pdb
+C:\Users\wolfd\Desktop\Study\Компьютерная графика\3-я лабораторная\Ellipse\Ellipse\obj\Debug\Ellipse.csproj.AssemblyReference.cache
+C:\Users\wolfd\Desktop\Study\Компьютерная графика\3-я лабораторная\Ellipse\Ellipse\obj\Debug\Ellipse.Form1.resources
+C:\Users\wolfd\Desktop\Study\Компьютерная графика\3-я лабораторная\Ellipse\Ellipse\obj\Debug\Ellipse.Properties.Resources.resources
+C:\Users\wolfd\Desktop\Study\Компьютерная графика\3-я лабораторная\Ellipse\Ellipse\obj\Debug\Ellipse.csproj.GenerateResource.cache
+C:\Users\wolfd\Desktop\Study\Компьютерная графика\3-я лабораторная\Ellipse\Ellipse\obj\Debug\Ellipse.csproj.CoreCompileInputs.cache
+C:\Users\wolfd\Desktop\Study\Компьютерная графика\3-я лабораторная\Ellipse\Ellipse\obj\Debug\Ellipse.exe
+C:\Users\wolfd\Desktop\Study\Компьютерная графика\3-я лабораторная\Ellipse\Ellipse\obj\Debug\Ellipse.pdb
