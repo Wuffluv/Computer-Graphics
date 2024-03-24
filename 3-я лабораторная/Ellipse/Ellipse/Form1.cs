@@ -12,49 +12,72 @@ namespace Ellipse
 {
     public partial class Form1 : Form
     {
-        private int ellipseWidth; // Ширина 
-        private int ellipseHeight; // Высота 
-
+        private Graphics graphics;
+        private PointF center;
+        private float width;
+        private float height;
+        private float angle;
         public Form1()
         {
             InitializeComponent();
-            pictureBox1.Paint += pictureBox1_Paint; //обработчик события Paint для изображенияя
+            center = new PointF(pictureBox1.Width / 2, pictureBox1.Height / 2);
+            width = 100;
+            height = 50;
+            angle = 30; // Угол в градусах
         }
 
-        // Обработчик события Paint для изображения
-        private void pictureBox1_Paint(object sender, PaintEventArgs e)
+
+
+        private void DrawEllipse(PointF center, float width, float height, float angle)
         {
-            // Рисуем эллипс в pictureBox1
-            DrawEllipse(e.Graphics);
+            float angleInRadians = angle * (float)Math.PI / 180;
+            float cosAngle = (float)Math.Cos(angleInRadians);
+            float sinAngle = (float)Math.Sin(angleInRadians);
+
+            // Создаем битмап для рисования
+            using (Bitmap bitmap = new Bitmap(pictureBox1.Width, pictureBox1.Height))
+            {
+                // Получаем Graphics изображения
+                using (Graphics g = Graphics.FromImage(bitmap))
+                {
+                    // Очищаем изображение
+                    g.Clear(Color.White);
+
+                    // Рисуем эллипс
+                    using (Pen pen = new Pen(Color.Black))
+                    {
+                        for (float t = 0; t <= 2 * Math.PI; t += 0.01f)
+                        {
+                            float x = center.X + width / 2 * (float)Math.Cos(t) * cosAngle - height / 2 * (float)Math.Sin(t) * sinAngle;
+                            float y = center.Y + width / 2 * (float)Math.Cos(t) * sinAngle + height / 2 * (float)Math.Sin(t) * cosAngle;
+                            g.DrawEllipse(pen, x, y, 1, 1);
+                        }
+                    }
+                }
+
+                // Устанавливаем изображение в PictureBox
+                pictureBox1.Image = bitmap;
+            }
         }
 
-        // Метод для рисования эллипса
-        private void DrawEllipse(Graphics g)
-        {
-            // Задаем параметры эллипса
-            int x = (pictureBox1.Width - ellipseWidth) / 2;
-            int y = (pictureBox1.Height - ellipseHeight) / 2;
 
-            // Рисуем эллипс 
-            g.DrawEllipse(Pens.White, x, y, ellipseWidth, ellipseHeight);
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+            private void label1_Click(object sender, EventArgs e)
         {
             
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Проверяем введенные пользователем значения ширины и высоты
-            if (int.TryParse(textBox1.Text, out ellipseWidth) && int.TryParse(textBox2.Text, out ellipseHeight))
+            // Обработка нажатия кнопки для построения эллипса
+            if (float.TryParse(textBox1.Text, out width) &&
+                float.TryParse(textBox2.Text, out height) &&
+                float.TryParse(textBox3.Text, out angle))
             {
-             
-                pictureBox1.Invalidate();
+                DrawEllipse(center, width, height, angle);
             }
             else
             {
-                MessageBox.Show("Пожалуйста, введите корректные значения для ширины и высоты.");
+                MessageBox.Show("Пожалуйста, введите корректные значения ширины, высоты и угла.");
             }
         }
     }
