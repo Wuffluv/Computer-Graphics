@@ -7,7 +7,7 @@ namespace Paint
 {
     public partial class Form1 : Form
     {
-        // Перечисление для определения текущего действия мыши
+        // определение текущего действия мыши
         private enum MouseAction { Draw, Fill };
 
         // Текущее действие мыши и цвет по умолчанию
@@ -26,26 +26,19 @@ namespace Paint
             InitializePictureBox();
         }
 
-        // Инициализация PictureBox и привязка обработчиков событий
+        
         private void InitializePictureBox()
         {
-            // Создание нового изображения для PictureBox
-            bitmap = new Bitmap(pictureBox1.Width, pictureBox1.Height);
-
-            // Получение объекта Graphics для рисования на изображении
+            bitmap = new Bitmap(pictureBox1.Width, pictureBox1.Height);      
             graphics = Graphics.FromImage(bitmap);
-
-            // Установка изображения для PictureBox и очистка его фона
             pictureBox1.Image = bitmap;
             graphics.Clear(Color.White);
-
-            // Привязка обработчиков событий мыши
             pictureBox1.MouseMove += PictureBox1_MouseMove;
             pictureBox1.MouseDown += PictureBox1_MouseDown;
             pictureBox1.MouseUp += PictureBox1_MouseUp;
         }
 
-        // Обработчик события отпускания кнопки мыши
+        
         private void PictureBox1_MouseUp(object sender, MouseEventArgs e)
         {
             drawing = false; // Остановка рисования
@@ -101,7 +94,7 @@ namespace Paint
             {
                 Point currentPoint = points.Dequeue();
 
-                // Проверка находится ли точка внутри границ PictureBox
+                // Проверка находится ли точка внутри границ 
                 if (currentPoint.X < 0 || currentPoint.Y < 0 || currentPoint.X >= pictureBox1.Width || currentPoint.Y >= pictureBox1.Height)
                     continue;
 
