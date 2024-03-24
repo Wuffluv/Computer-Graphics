@@ -1,0 +1,21 @@
+C:\Users\budae\Desktop\Учебка\6 семестр\Компьютерная графика\6 лабораторная 2\CutLine\bin\Debug\CutLine.exe.config
+C:\Users\budae\Desktop\Учебка\6 семестр\Компьютерная графика\6 лабораторная 2\CutLine\bin\Debug\CutLine.exe
+C:\Users\budae\Desktop\Учебка\6 семестр\Компьютерная графика\6 лабораторная 2\CutLine\bin\Debug\CutLine.pdb
+C:\Users\budae\Desktop\Учебка\6 семестр\Компьютерная графика\6 лабораторная 2\CutLine\obj\Debug\CutLine.csproj.AssemblyReference.cache
+C:\Users\budae\Desktop\Учебка\6 семестр\Компьютерная графика\6 лабораторная 2\CutLine\obj\Debug\CutLine.csproj.SuggestedBindingRedirects.cache
+C:\Users\budae\Desktop\Учебка\6 семестр\Компьютерная графика\6 лабораторная 2\CutLine\obj\Debug\CutLine.Form1.resources
+C:\Users\budae\Desktop\Учебка\6 семестр\Компьютерная графика\6 лабораторная 2\CutLine\obj\Debug\CutLine.Properties.Resources.resources
+C:\Users\budae\Desktop\Учебка\6 семестр\Компьютерная графика\6 лабораторная 2\CutLine\obj\Debug\CutLine.csproj.GenerateResource.cache
+C:\Users\budae\Desktop\Учебка\6 семестр\Компьютерная графика\6 лабораторная 2\CutLine\obj\Debug\CutLine.csproj.CoreCompileInputs.cache
+C:\Users\budae\Desktop\Учебка\6 семестр\Компьютерная графика\6 лабораторная 2\CutLine\obj\Debug\CutLine.exe
+C:\Users\budae\Desktop\Учебка\6 семестр\Компьютерная графика\6 лабораторная 2\CutLine\obj\Debug\CutLine.pdb
+C:\Users\wolfd\Desktop\CutLine\bin\Debug\CutLine.exe.config
+C:\Users\wolfd\Desktop\CutLine\bin\Debug\CutLine.exe
+C:\Users\wolfd\Desktop\CutLine\bin\Debug\CutLine.pdb
+C:\Users\wolfd\Desktop\CutLine\obj\Debug\CutLine.csproj.AssemblyReference.cache
+C:\Users\wolfd\Desktop\CutLine\obj\Debug\CutLine.Form1.resources
+C:\Users\wolfd\Desktop\CutLine\obj\Debug\CutLine.Properties.Resources.resources
+C:\Users\wolfd\Desktop\CutLine\obj\Debug\CutLine.csproj.GenerateResource.cache
+C:\Users\wolfd\Desktop\CutLine\obj\Debug\CutLine.csproj.CoreCompileInputs.cache
+C:\Users\wolfd\Desktop\CutLine\obj\Debug\CutLine.exe
+C:\Users\wolfd\Desktop\CutLine\obj\Debug\CutLine.pdb
